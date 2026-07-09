@@ -55,19 +55,31 @@ formulario.addEventListener("submit", function(event){
 
     // Criando objeto
 
-    const novaDoacao = {
+   const novaDoacao = {
 
-        titulo: titulo,
+id: Date.now(),
 
-        descricao: descricao,
+titulo,
 
-        categoria: categoria,
+descricao,
 
-        cidade: cidade,
+categoria,
 
-        imagem: imagem
+cidade,
 
-    };
+imagem,
+
+dataPublicacao: new Date().toISOString(),
+
+status: "Disponível",
+
+visualizacoes: 0,
+
+solicitacoes: 0,
+
+prioridade: 0
+
+};
 
     // Busca as doações existentes
 

@@ -3,6 +3,7 @@
 // ============================================
 
 // Lista padrão de doações
+const usuario = JSON.parse(localStorage.getItem("usuario"));
 let doacoes = [
     {
         titulo: "Roupas Masculinas",
@@ -128,4 +129,6 @@ function solicitar(item){
 // Carregar ao abrir
 // ============================================
 
-carregarDoacoes(doacoes);
+const doacoesOrdenadas = ordenarDoacoes(doacoes, usuario);
+
+carregarDoacoes(doacoesOrdenadas);
