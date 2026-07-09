@@ -1,0 +1,189 @@
+/* ==================================
+   DOAMAIS - PERFIL
+================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f5f7fa;
+
+}
+
+/* ================= HEADER ================= */
+
+header{
+
+    background:#28a745;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+}
+
+nav a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ================= PERFIL ================= */
+
+.perfil{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:80vh;
+
+    padding:30px;
+
+}
+
+.card{
+
+    width:450px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+.foto{
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:20px;
+
+}
+
+.card h1{
+
+    color:#28a745;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    margin:10px 0;
+
+    color:#555;
+
+    font-size:17px;
+
+}
+
+.card button{
+
+    margin-top:25px;
+
+    width:100%;
+
+    padding:15px;
+
+    background:#28a745;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.card button:hover{
+
+    background:#208638;
+
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media(max-width:600px){
+
+.card{
+
+    width:100%;
+
+}
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+}

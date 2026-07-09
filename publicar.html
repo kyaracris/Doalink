@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Publicar Doação | DoaMais</title>
+
+    <link rel="stylesheet" href="css/publicar.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        ❤️ DoaMais
+
+    </div>
+
+    <nav>
+
+        <a href="home.html">Home</a>
+
+        <a href="publicar.html">Publicar</a>
+
+        <a href="perfil.html">Perfil</a>
+
+        <a href="index.html">Sair</a>
+
+    </nav>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h1>Publicar uma Doação</h1>
+
+<p>Preencha os dados abaixo.</p>
+
+<form id="formDoacao">
+
+<label>Nome do Item</label>
+
+<input
+type="text"
+id="titulo"
+placeholder="Ex.: Bicicleta Infantil"
+required>
+
+<label>Descrição</label>
+
+<textarea
+id="descricao"
+rows="5"
+placeholder="Descreva o item..."
+required></textarea>
+
+<label>Categoria</label>
+
+<select id="categoria">
+
+<option>Roupas</option>
+
+<option>Alimentos</option>
+
+<option>Móveis</option>
+
+<option>Brinquedos</option>
+
+<option>Livros</option>
+
+<option>Eletrônicos</option>
+
+<option>Outros</option>
+
+</select>
+
+<label>Cidade</label>
+
+<input
+type="text"
+id="cidade"
+placeholder="Sua cidade"
+required>
+
+<label>Imagem (URL)</label>
+
+<input
+type="text"
+id="imagem"
+placeholder="Cole o link de uma imagem">
+
+<button
+type="submit">
+
+Publicar Doação
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="js/publicar.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fa;
+}
+
+header{
+    background:#28a745;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.titulo{
+    text-align:center;
+    padding:40px;
+}
+
+.titulo h1{
+    color:#28a745;
+    margin-bottom:10px;
+}
+
+.lista{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    padding-bottom:40px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h2{
+    padding:15px;
+    color:#28a745;
+}
+
+.card p{
+    padding:0 15px 10px;
+}
+
+.botoes{
+    display:flex;
+    gap:10px;
+    padding:15px;
+}
+
+.editar,
+.excluir{
+
+    flex:1;
+
+    border:none;
+
+    padding:12px;
+
+    color:white;
+
+    cursor:pointer;
+
+    border-radius:8px;
+
+}
+
+.editar{
+
+    background:#0d6efd;
+
+}
+
+.excluir{
+
+    background:#dc3545;
+
+}
+
+.editar:hover{
+
+    background:#0b5ed7;
+
+}
+
+.excluir:hover{
+
+    background:#bb2d3b;
+
+}

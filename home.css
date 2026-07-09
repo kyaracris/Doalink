@@ -1,0 +1,321 @@
+/* ============================
+   RESET
+============================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f5f7fa;
+
+}
+
+/* ============================
+   HEADER
+============================ */
+
+header{
+
+    background:#28a745;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+}
+
+nav a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ============================
+   BANNER
+============================ */
+
+.banner{
+
+    text-align:center;
+
+    padding:70px 20px;
+
+    background:linear-gradient(135deg,#28a745,#0d6efd);
+
+    color:white;
+
+}
+
+.banner h1{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+}
+
+.banner p{
+
+    font-size:20px;
+
+}
+
+/* ============================
+   PESQUISA
+============================ */
+
+.pesquisa{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    padding:40px;
+
+}
+
+.pesquisa input{
+
+    width:350px;
+
+    padding:14px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+}
+
+.pesquisa select{
+
+    padding:14px;
+
+    border-radius:8px;
+
+}
+
+.pesquisa button{
+
+    padding:14px 25px;
+
+    background:#28a745;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.pesquisa button:hover{
+
+    background:#208638;
+
+}
+
+/* ============================
+   DOAÇÕES
+============================ */
+
+.doacoes{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    padding:50px 8%;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.card h2{
+
+    padding:15px;
+
+    color:#28a745;
+
+}
+
+.card p{
+
+    padding:0 15px 15px;
+
+    color:#555;
+
+}
+
+.card button{
+
+    margin:15px;
+
+    width:calc(100% - 30px);
+
+    padding:15px;
+
+    border:none;
+
+    background:#0d6efd;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.card button:hover{
+
+    background:#0b5ed7;
+
+}
+
+/* ============================
+   FOOTER
+============================ */
+
+footer{
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+/* ============================
+   RESPONSIVO
+============================ */
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.banner h1{
+
+    font-size:34px;
+
+}
+
+.banner p{
+
+    font-size:18px;
+
+}
+
+.pesquisa{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.pesquisa input{
+
+    width:100%;
+
+    max-width:400px;
+
+}
+
+}
