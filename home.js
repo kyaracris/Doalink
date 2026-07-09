@@ -4,6 +4,12 @@
 
 // Lista padrão de doações
 const usuario = JSON.parse(localStorage.getItem("usuario"));
+
+const proximidade = calcularProximidade(
+    usuario?.cidade,
+    doacao.cidade
+);
+const usuario = JSON.parse(localStorage.getItem("usuario"));
 let doacoes = [
     {
         titulo: "Roupas Masculinas",
